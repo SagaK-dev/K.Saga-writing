@@ -1,0 +1,20 @@
+{
+  "family": "K.Saga writing",
+  "requested": 4,
+  "generated": 4,
+  "missing_count": 0,
+  "missing": [],
+  "warnings": [],
+  "files": {
+    "ttf": "KSagawriting-Regular.ttf",
+    "otf": "KSagawriting-Regular.otf"
+  },
+  "format_checks": {
+    "ttf": "glyf TrueType outlines verified",
+    "otf": "CFF OpenType outlines verified"
+  },
+  "notes": [
+    "Synthetic pen strokes only; physical handwriting not verified.",
+    "Output sample binary files are generated locally, not committed."
+  ]
+}

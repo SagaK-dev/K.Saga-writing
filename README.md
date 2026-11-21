@@ -52,7 +52,7 @@ backend/hwf/
 frontend/src/   React / TypeScript / Vite UI
 frontend/fallback/  依存不要のオフラインHTML / JS UI
 data/joyo_kanji.txt  常用漢字2136字集合
-samples/        合成赤インク画像・デモPDF・検証済みデモフォント
+samples/        合成サンプルの生成・検証手順（バイナリはローカル生成）
 tests/          pytest回帰テスト
 ```
 
@@ -73,7 +73,7 @@ React UIを有効にする場合は `cd frontend && npm install && npm run build
 
 - TTFはTrueType二次曲線（Bezierの三次曲線を二次に変換）、OTFはCFF三次曲線。`fontTools`で再読込・cmap検証。
 - 画像が薄い／背景が赤みを帯びる場合、抽出の確認・再処理が必要。
-- このプロジェクトには**実物の手書きスキャンによる受入テスト結果は含まれていません**。`samples`は合成筆跡です。
+- このプロジェクトには**実物の手書きスキャンによる受入テスト結果は含まれていません**。`samples`のテスト用バイナリは `PYTHONPATH=backend python tests/smoke_backend.py` でローカル生成します。GitHubには個人用フォントバイナリを公開しません。
 - 大量の漢字での長文組版品質、筆圧再現、Windowsへの現物インストールは今後の実機検証項目です。
 - 複数コードポイントからなる異体字シーケンスや結合文字の字形組版には未対応。ユニコードスカラー単位で処理します。
 - 通常の色付き文字フォントではなく、赤い筆跡から形状を抽出した**モノクロのアウトラインフォント**を生成します。

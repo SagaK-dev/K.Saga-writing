@@ -1,0 +1,45 @@
+:root{font-family:"Yu Gothic UI","Meiryo",system-ui,sans-serif;color:#171717;background:#f8f8f7;font-size:14px;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.45}a{color:inherit}
+.topbar{background:#171717;color:white;display:flex;justify-content:space-between;align-items:center;padding:18px 30px;gap:20px}
+.topbar strong{font-size:18px}.topbar span{font-size:10px;letter-spacing:.1em}
+h1{font-size:clamp(28px,4vw,48px);line-height:1.28;letter-spacing:-.04em;margin:18px 0}h2{font-size:18px;letter-spacing:-.02em}
+.lead,.help{color:#666;line-height:1.85}.muted,.note{color:#888;font-size:12px}
+button{border:1px solid #bbb;border-radius:0;background:white;padding:10px 16px}
+button.primary,.primary{background:#161616;color:white;border:1px solid #161616}
+button:hover{filter:brightness(.94)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #555;outline-offset:3px}
+input:not([type="checkbox"]):not([type="file"]),select,textarea{display:block;width:100%;padding:11px 12px;margin-top:8px;border:1px solid #c9c9c9;background:white;border-radius:0;max-width:100%}
+textarea{resize:vertical}label{display:block;font-size:12px;font-weight:600}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.span2{grid-column:span 2}
+.action-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:22px;padding-top:18px;border-top:1px solid #ddd}
+.action-footer small{display:block;font-size:11px;color:#777;margin-top:5px}
+.progress{height:6px;width:100%;background:#eee;overflow:hidden}.progress div{height:100%;background:#151515;transition:width .2s}
+.section-kicker{font-size:11px;font-weight:600;letter-spacing:.18em;color:#777}
+#setup .panel,#work .panel{box-shadow:none}.dropzone{border:1px dashed #777;padding:32px;display:block;text-align:center;margin:25px 0;background:#fcfcfc}
+.dropzone input{display:block;margin:12px auto}.dropzone small{display:block;color:#777;margin-top:12px}
+.manual{border:1px solid #ddd;padding:15px}.manual summary{cursor:pointer}.manual-body{padding-top:16px}
+.manual-body label{margin-bottom:12px}.manual .check{display:flex;align-items:center;gap:8px}
+.grid-glyphs{margin-top:10px}.editor-main .form-grid{margin:20px 0}.comparison img{display:block;background:#fff;margin-bottom:4px}
+.word-preview{overflow-wrap:anywhere}.files{display:flex;gap:10px;flex-wrap:wrap}.text-button{background:transparent;border:0;text-decoration:underline;padding-left:0}
+[hidden]{display:none!important}
+@media(max-width:680px){.topbar{padding:15px}.form-grid{grid-template-columns:1fr}.span2{grid-column:auto}.action-footer{flex-direction:column;align-items:stretch}.toolbar{gap:8px}}
+
+.shell{min-height:100vh}
+.workspace{max-width:1100px;margin:35px auto;padding:0 20px 65px}
+.panel{background:white;border:1px solid #d7d7d7;padding:25px;margin:24px 0}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:18px 0}
+.nav{display:flex;flex-wrap:wrap;border-bottom:1px solid #ddd;margin:24px 0;gap:8px}
+.nav button{border:1px solid #ddd;background:white;padding:12px}
+.nav button.active,.glyph-grid button.active{background:#151515;color:white}
+.mini-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;max-width:540px}
+.mini-grid div{height:50px;padding:6px;border:1px solid #c5e4ec;color:#333}
+.editor{display:grid;grid-template-columns:235px 1fr;gap:24px}
+.glyph-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:10px;max-height:440px;overflow:auto}
+.glyph-grid button{height:45px;font-size:20px;padding:3px}
+.comparison{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.comparison img{height:120px;max-width:100%;width:100%;border:1px solid #ddd;object-fit:contain}
+.comparison small{display:block;text-align:center}
+.preview-page{border:1px solid #ddd;background:white;white-space:pre-wrap;overflow-wrap:anywhere;padding:25px;min-height:170px;font-size:28px;line-height:1.8;margin:15px 0}
+.notice{padding:15px;margin:15px 0;border-left:3px solid #222;background:#eee}
+.notice button{float:right;background:transparent;border:none;font-size:11px}
+footer{color:#888;font-size:11px;margin-top:50px}
+@media(max-width:700px){.workspace{padding:0 12px}.editor{grid-template-columns:1fr}.glyph-grid{grid-template-columns:repeat(8,1fr);max-height:180px}.comparison img{height:90px}}

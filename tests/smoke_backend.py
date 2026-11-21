@@ -45,6 +45,7 @@ def smoke():
 
 if __name__=='__main__':
     tmp,p,pdf,png,result=smoke()
+    (root/'samples').mkdir(parents=True, exist_ok=True)
     (root/'samples'/'sample-sheet.pdf').write_bytes(pdf)
     (root/'samples'/'sample-scan-synthetic.png').write_bytes(png)
     for file in (storage.project_dir(p['id'])/'exports').iterdir():
